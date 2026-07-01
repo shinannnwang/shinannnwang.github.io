@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Shinan Wang portrait placeholder">
+  <rect width="400" height="400" fill="#efe8f5"/>
+  <circle cx="200" cy="200" r="200" fill="#efe8f5"/>
+  <text x="50%" y="50%" dy="0.02em" text-anchor="middle" dominant-baseline="central"
+        font-family="'EB Garamond', Georgia, serif" font-size="150" font-weight="700" fill="#4E2A84">SW</text>
+  <text x="50%" y="82%" text-anchor="middle" font-family="'Inter', sans-serif" font-size="15"
+        letter-spacing="0.12em" fill="#6b4aa3">REPLACE WITH PHOTO</text>
+</svg>

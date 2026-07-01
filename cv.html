@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Shinan Wang</title>
+<meta name="description" content="Curriculum Vitae — Shinan Wang, Kellogg School of Management, Northwestern University.">
+<link rel="canonical" href="https://www.shinanwang.com/cv.html">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/site.css">
+
+<style>
+  .cv-card {
+    padding: 48px 0 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .cv-title {
+    font-family: var(--font-display);
+    font-size: clamp(41px, 5vw, 57px);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+  .cv-download {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    border: 1px solid var(--rule-strong);
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition: border-color var(--t-fast), color var(--t-fast);
+  }
+  .cv-download:hover { border-color: var(--accent); text-decoration: none; }
+  .cv-download svg { width: 16px; height: 16px; }
+
+  .cv-viewer {
+    margin: 22px 0 64px;
+    width: 100%;
+    aspect-ratio: 8.5 / 11;
+    max-height: calc(100vh - 160px);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--bg-muted);
+  }
+  .cv-viewer iframe {
+    width: 100%; height: 100%;
+    border: 0;
+    display: block;
+  }
+  .cv-fallback {
+    padding: 32px;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    color: var(--fg-muted);
+  }
+  .cv-fallback a { color: var(--accent); }
+
+  @media (max-width: 640px) {
+    .cv-viewer { display: none; }
+    .cv-card { padding: 48px 0 96px; }
+  }
+</style>
+
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="inner">
+    <a href="/" class="brand plain">
+      <span class="brand-name">Shinan Wang</span>
+    </a>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="research.html">Research</a>
+      <a href="cv.html" aria-current="page">CV</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container-mid">
+
+    <section class="cv-card">
+      <h1 class="cv-title">Curriculum Vitae</h1>
+      <!-- TODO: drop your CV PDF into the site root as shinan-wang_cv.pdf -->
+      <a class="cv-download" href="shinan-wang_cv.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+        View CV
+      </a>
+    </section>
+
+    <div class="cv-viewer">
+      <iframe src="shinan-wang_cv.pdf#view=FitH&toolbar=0" title="Shinan Wang — CV">
+        <div class="cv-fallback">
+          Your browser cannot display the inline PDF.
+          <a href="shinan-wang_cv.pdf" target="_blank" rel="noopener">Open the CV in a new tab</a>.
+        </div>
+      </iframe>
+    </div>
+
+  </div>
+</main>
+
+<footer class="page-footer">
+  © 2026 Shinan Wang · All rights reserved.
+</footer>
+
+</body>
+</html>
