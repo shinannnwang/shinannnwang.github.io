@@ -443,8 +443,8 @@ main { padding: 0 var(--gutter); }
   line-height: 1.25;
   margin: 0;
 }
-.paper-item h3 a { color: var(--fg); }
-.paper-item h3 a:hover { color: var(--accent); text-decoration: none; }
+.paper-item h3 a { color: var(--accent); }
+.paper-item h3 a:hover { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
 
 /* Evenly-spaced single-line rows below the title:
    authors, venue, abstract toggle, and each link — all share the same rhythm. */
