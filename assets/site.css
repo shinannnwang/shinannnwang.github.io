@@ -190,7 +190,7 @@ main { padding: 0 var(--gutter); }
 /* Portrait */
 .hero-portrait {
   width: 100%;
-  max-width: 270px;
+  max-width: 200px;
   justify-self: start;
 }
 .hero-portrait .frame {
@@ -205,13 +205,13 @@ main { padding: 0 var(--gutter); }
 
 @media (min-width: 820px) {
   .hero {
-    grid-template-columns: 1fr 270px;
+    grid-template-columns: 1fr 200px;
     gap: 40px;
     padding: 60px 0 60px;
     min-height: calc(100vh - 120px);
   }
   .hero-portrait {
-    width: 270px; max-width: 270px;
+    width: 200px; max-width: 200px;
     justify-self: end;
     margin-top: 96px;
     margin-right: -20px;
