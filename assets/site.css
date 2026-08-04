@@ -196,7 +196,7 @@ main { padding: 0 var(--gutter); }
 .hero-portrait .frame {
   overflow: hidden;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0;
 }
 .hero-portrait .frame img {
   width: 100%; height: auto;
