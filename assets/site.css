@@ -213,7 +213,8 @@ main { padding: 0 var(--gutter); }
   .hero-portrait {
     width: 200px; max-width: 200px;
     justify-self: end;
-    margin-top: 96px;
+    align-self: start;
+    margin-top: 84px;
     margin-right: -20px;
   }
 }
