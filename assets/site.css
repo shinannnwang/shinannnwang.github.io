@@ -205,17 +205,18 @@ main { padding: 0 var(--gutter); }
 
 @media (min-width: 820px) {
   .hero {
-    grid-template-columns: minmax(0, 640px) 250px;
+    grid-template-columns: minmax(0, 620px) 260px;
     justify-content: start;
-    gap: 36px;
-    padding: 60px 0 60px;
-    min-height: calc(100vh - 120px);
+    align-items: start;
+    column-gap: 52px;
+    padding: 64px 0 72px;
+    min-height: auto;
   }
   .hero-portrait {
-    width: 250px; max-width: 250px;
+    width: 260px; max-width: 260px;
     justify-self: start;
     align-self: start;
-    margin-top: 168px;
+    margin-top: 10px;
     margin-right: 0;
   }
 }
