@@ -190,7 +190,7 @@ main { padding: 0 var(--gutter); }
 /* Portrait */
 .hero-portrait {
   width: 100%;
-  max-width: 180px;
+  max-width: 203px;
   justify-self: start;
 }
 .hero-portrait .frame {
@@ -205,17 +205,17 @@ main { padding: 0 var(--gutter); }
 
 @media (min-width: 820px) {
   .hero {
-    grid-template-columns: 1fr 180px;
-    gap: 40px;
+    grid-template-columns: 1fr 203px;
+    gap: 20px;
     padding: 60px 0 60px;
     min-height: calc(100vh - 120px);
   }
   .hero-portrait {
-    width: 180px; max-width: 180px;
-    justify-self: end;
+    width: 203px; max-width: 203px;
+    justify-self: start;
     align-self: start;
     margin-top: 168px;
-    margin-right: -20px;
+    margin-right: 0;
   }
 }
 
