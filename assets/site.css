@@ -133,7 +133,7 @@ h1, h2, h3, h4 {
 @media (max-width: 640px) {
   .hero-name { font-size: 43px; }
   .hero { padding: 32px 0 32px; gap: 24px; }
-  .hero-portrait { order: -1; max-width: 240px; justify-self: center; }
+  .hero-portrait { order: -1; max-width: 250px; justify-self: center; }
 }
 
 /* ------------------------------------------------------------ LAYOUT */
@@ -190,7 +190,7 @@ main { padding: 0 var(--gutter); }
 /* Portrait */
 .hero-portrait {
   width: 100%;
-  max-width: 203px;
+  max-width: 250px;
   justify-self: start;
 }
 .hero-portrait .frame {
@@ -205,13 +205,14 @@ main { padding: 0 var(--gutter); }
 
 @media (min-width: 820px) {
   .hero {
-    grid-template-columns: 1fr 203px;
-    gap: 20px;
+    grid-template-columns: minmax(0, 640px) 250px;
+    justify-content: start;
+    gap: 36px;
     padding: 60px 0 60px;
     min-height: calc(100vh - 120px);
   }
   .hero-portrait {
-    width: 203px; max-width: 203px;
+    width: 250px; max-width: 250px;
     justify-self: start;
     align-self: start;
     margin-top: 168px;
