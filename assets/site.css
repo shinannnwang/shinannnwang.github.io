@@ -208,7 +208,7 @@ main { padding: 0 var(--gutter); }
     grid-template-columns: minmax(0, 620px) 260px;
     justify-content: start;
     align-items: start;
-    column-gap: 64px;
+    column-gap: 72px;
     padding: 64px 0 72px;
     min-height: auto;
   }
